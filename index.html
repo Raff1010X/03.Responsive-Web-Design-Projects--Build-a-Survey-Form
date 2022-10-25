@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Near-miss report from">
+  <meta name="keywords" content="Near-miss">
+  <meta name="author" content="Rafał Kowalczyk">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <!-- <title>Near-miss report from</title> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+ 
+<header id="header">
+  <h1 id="title">Near-miss report from</h1>
+  <div id="space-div"></div>    
+  <p id="description">A near-miss is a potential hazard or incident that has not resulted in any personal injury or
+    property damage. Some examples of near-misses are unsafe conditions, improper use of
+    equipment, use of faulty equipment, not following proper procedures…. <br>It is everyone’s
+    responsibility to report and correct any of these potential hazards immediately. Please use this
+    form to report near-misses and assist us in preventing future incidents and making a safer
+    workplace.</p>
+  <button id="report-button">Report near-miss NOW!</button>
+</header>
+<main>
+  <form id="survey-form" onsubmit="return false">
+    <h2>Fill the form</h2>
+    <fieldset>
+      <legend>1. When was it?</legend>
+      <label for="date-picker" id="dropdown-label-date">Date:</label>
+      <br>         
+      <input type="date" id="date-picker" required>
+      <br>
+      <label for="time-picker" id="dropdown-label-time">Time:</label>
+      <br>  
+      <input type="time" id="time-picker" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. Where was it?</legend>
+      <label for="dropdown" id="dropdown-label">Department:</label>
+      <br> 
+      <select id="dropdown" required>
+        <option value = "dep1">Dep 1</option>
+        <option value = "dep2">Dep 2</option>
+        <option value = "dep3">Dep 3</option>
+      </select>
+      <br>
+      <label for="textarea">Place:</label>
+      <br>
+        <textarea id="textarea-place" placeholder="Name the place of near-miss" id="textarea" required></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. What happend?</legend>
+
+        <fieldset class="internal-fieldset">
+          <legend>Mark appropriate condition</legend>
+          <input type="radio" id="radio1" value="nearmiss" name="condition" required>
+          <label for="radio1">Near-miss</label>
+          <br>
+          <input type="radio" id="radio2" value="concern" name="condition">  
+          <label for="radio2">Safety concern</label>
+          <br>
+          <input type="radio" id="radio3" value="suggestion" name="condition">   
+          <label for="radio3">Safety suggestion</label>
+          <br>
+          <input type="radio" id="radio4" value="other" name="condition">         
+          <label for="radio4">Other</label>
+        </fieldset>
+
+        <fieldset class="internal-fieldset">
+          <legend>Type of concern</legend>  
+          <input type="checkbox" id="checkbox1" required value="act" name="concern">
+          <label for="checkbox1">Unsafe act</label>  
+          <br>
+          <input type="checkbox" id="checkbox2" required value="area" name="concern">
+          <label for="checkbox2">Unsafe condition of area</label>
+          <br>
+          <input type="checkbox" id="checkbox3" required value="equipment" name="concern">
+          <label for="checkbox3">Unsafe condition of equipment</label>
+          <br>
+          <input type="checkbox" id="checkbox4" required value="use" name="concern">
+          <label for="checkbox4">Unsafe use of equipment</label>
+          <br>
+          <input type="checkbox" id="checkbox5" required value="other" name="concern">
+          <label for="checkbox5">Other</label>
+        </fieldset>
+
+      <label for="what-happend"></label>
+        <textarea placeholder="Describe the hazard" id="what-happend" required></textarea>
+    </fieldset>
+    <div>
+      <fieldset>
+        <legend>4. What is the risk?</legend>
+        <label for="number" id="number-label">Risk on a scale of 1 to 10</label>
+          <input type="number" min="1" max="10" id="number" placeholder="Number from 1 to 10" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>5. What to do?</legend>
+        <label for="what-to-do"></label>
+          <textarea placeholder="Describe what should be done" id="what-to-do" required></textarea>
+      </fieldset> 
+
+      <fieldset>
+        <legend>6. Who are You?</legend>
+        <label for="name" id="name-label">Your name:</label>
+          <input type="text" id="name" placeholder="Name" required>
+        <br>
+        <label for="email" id="email-label">Your email:</label>
+          <input type="email" id="email" placeholder="Email adress" required>
+      </fieldset>
+    </div>
+    <button id="submit">Submit</button>    
+  
+  </form>
+
+</main>
+<footer id="footer">
+  <p>
+    Thank You for your report.<br><br>
+    For questions or cases deemed immediately dangerous to life or death,
+    call Environmental Health and Safety at (123) 123-4567.<br><br>
+    In the case of an emergency call 911.
+  </p>
+</footer>
+</html>

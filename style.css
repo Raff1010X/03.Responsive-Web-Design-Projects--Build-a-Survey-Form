@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400&display=swap");
+
+
+:root {
+  touch-action: pan-x pan-y;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url(./safety.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+header,
+footer,
+main {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+main {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#space-div {
+  height: 7rem;
+  background-color: transparent;
+  color: transparent;
+}
+h1 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+  position: fixed;
+  top: 5rem;
+  width: 150vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition-duration: 0.25s;
+  transform: rotate(-5deg);
+}
+.h1-end {
+  font-size: 2rem;
+  transform: rotate(0deg);
+  padding: 1rem;
+  top: 0;
+  background-color: black;
+}
+.h1-up {
+  font-size: 2rem;
+  transform: rotate(0deg);
+  padding: 1rem;
+  top: -5rem;
+  background-color: black;
+}
+
+p {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 0, 0.85);
+  width: 50vw;
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: justify;
+  overflow: scroll;
+  overflow-x: hidden;
+  cursor: default;
+  transition-duration: 0.5s;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.p-end {
+  padding: 0rem;
+  border-radius: 100rem;
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+button {
+  font-family: "IBM Plex Serif", serif;
+  height: 5rem;
+  width: 50vw;
+  min-width: 300px;
+  color: rgba(0, 0, 30, 1);
+  background-color: rgba(255, 255, 0, 0.75);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid black;
+  border-radius: 1rem;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+p:hover,
+button:hover {
+  background-color: rgba(255, 255, 0, 0.75);
+  box-shadow: 25px 25px 25px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  color: black;
+}
+footer p {
+  text-align: center;
+  max-width: 50%;
+}
+
+form {
+  background-color: rgb(255, 255, 0, 0.5);
+  border-radius: 1rem;
+  min-width: 360px;
+  width: 75vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 2rem;
+  transition-duration: 0.5s;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "IBM Plex Serif", serif;
+  margin: 2rem 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+fieldset {
+  width: 33vw;
+  min-width: 300px;
+  height: auto;
+  font-size: 1.5rem;
+  background-color: rgb(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0;
+  transition: 0.25s;
+  box-sizing: border-box;
+  transition-duration: 0.5s;
+}
+legend {
+  padding: 2rem 0 0 0;
+  margin: 0 0 -0.75rem 0;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.internal-fieldset {
+  background-color: rgba(0, 0, 0, 0);
+  width: auto;
+  min-width: 0;
+  font-size: 1.5rem;
+  margin: -0.5rem 0 0.5rem 0;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+.internal-fieldset legend {
+  padding: 0;
+  font-size: 1.5rem;
+}
+.internal-fieldset label {
+  top: -0.4rem;
+  position: relative;
+}
+fieldset:hover {
+  background-color: rgba(255, 255, 0, 0.9);
+  box-shadow: 25px 25px 25px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.025);
+  transition: 0.25s;
+}
+.internal-fieldset:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: none;
+  transform: scale(1);
+  transition: 0.25s;
+}
+
+textarea {
+  width: 100%;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  margin: 0 0 -0.5rem 0;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  resize: none;
+  box-sizing: border-box;
+  height: 3.5rem;
+}
+::-webkit-input-placeholder {
+  color: dimgray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+::-moz-placeholder {
+  color: dimgray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+:-ms-input-placeholder {
+  color: dimgray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+::-ms-input-placeholder {
+  color: dimgray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+::placeholder {
+  color: dimgray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#title {
+  z-index: 9999;
+  color: rgb(255, 255, 0, 0.85);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  border: 1px solid black;
+  margin: 0;
+}
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  border: 3px solid black;
+  background-color: yellow;
+  color: black;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  background-color: white;
+  border-radius: 50%;
+}
+/*input[type="radio"]:checked::before, input[type="checkbox"]:checked::before {
+      font-size: 1rem;
+      content: "";
+    }*/
+select,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="time"],
+input[type="date"] {
+  width: 100%;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+input:invalid,
+textarea:invalid,
+input[type="radio"]:invalid,
+input[type="checkbox"]:invalid {
+  border: 2px solid red;
+}
+input[type="text"].valid,
+input[type="email"].valid {
+   background-color: white;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  form {
+    display: block;
+    width: 90vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  fieldset {
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    background-size: auto 900px;
+  }
+}
