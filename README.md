@@ -1,6 +1,6 @@
-# freeCodeCamp Responsive Web Design certification
+# [freeCodeCamp Responsive Web Design certification](https://www.freecodecamp.org/learn/responsive-web-design/)
 
-## Build a Survey Form project
+## [Build a Survey Form project](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 
 Working example: https://raff1010x.github.io/03.Responsive-Web-Design-Projects--Build-a-Survey-Form/
 
